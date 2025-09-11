@@ -218,3 +218,133 @@ button {
   }
 }
 /* End form-account */
+
+/* Header */
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+}
+
+.header .inner-logo {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .inner-logo a {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.header .inner-logo a span:nth-child(1) {
+  color: var(--primary-color);
+}
+
+.header .inner-logo a span:nth-child(2) {
+  color: var(--primary-text);
+}
+
+.inner-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 13px 13px 13px 0;
+  gap: 40px;
+}
+
+.header .inner-notify {
+  position: relative;
+  cursor: pointer;
+}
+
+.header .inner-notify img {
+  width: 25px;
+  height: auto;
+}
+.header .inner-notify span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f93c65;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.header .inner-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.header .inner-account .inner-avatar {
+  width: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.header .inner-account .inner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .inner-account .inner-text {
+  flex: 1;
+}
+
+.header .inner-account .inner-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #404040;
+  margin-bottom: 3px;
+}
+
+.header .inner-account .inner-role {
+  font-weight: 600;
+  font-size: 12px;
+  color: #565656;
+}
+/* ENd Header */
+
+/* Sider */
+.sider {
+  background-color: white;
+  border-right: #e0e0e0;
+  width: 240px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow-y: auto;
+}
+/* End Sider */
+
+/* Main */
+.main {
+  background-color: #f5f6fa;
+  position: absolute;
+  top: 70px;
+  left: 240px;
+  width: calc(100% - 240px);
+  min-height: calc(100vh - 70px);
+  padding: 30px;
+}
+/* End Main */

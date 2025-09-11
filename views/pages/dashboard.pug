@@ -1,74 +1,8 @@
-doctype html
-html
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Tổng quan
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css")
-    link(rel="stylesheet" href="assets/css/lib.css")
-    link(rel="stylesheet" href="assets/css/style.css")
-  body
-    // Header
-    header.header 
-      .inner-logo 
-        a(href="#") 
-          span 28
-          span Admin
-      .inner-wrap
-        .inner-notify
-          img(src="assets/images/icon-bell.svg" alt="")
-          span 6
-        .inner-account
-          .inner-avatar
-            img(src="assets/images/avatar.png" alt="")
-          .inner-text
-            .inner-name Le Van A
-            .inner-role Admin
-    // End Header
+extends ../layouts/default.pug
 
-    // Sider
-    nav.sider 
-      ul.inner-menu
-        li
-          a(href="#" class="active")
-            i.fa-solid.fa-gauge-high
-            |  Tổng quan
-        li
-          a(href="#")
-            i.fa-solid.fa-table-cells-large
-            |  Quản lý danh mục
-        li
-          a(href="#")
-            i.fa-solid.fa-table-list
-            |  Quản lý tour
-        li
-          a(href="#")
-            i.fa-solid.fa-list-check
-            |  Quản lý đơn hàng
-        li
-          a(href="#")
-            i.fa-solid.fa-user
-            |  Quản lý người dùng
-        li
-          a(href="#")
-            i.fa-solid.fa-user-group
-            |  Thông tin liên hệ
-      hr
-      ul.inner-menu
-        li
-          a(href="#")
-            i.fa-solid.fa-gear
-            |  Cài đặt chung
-        li
-          a(href="#")
-            i.fa-solid.fa-user-gear
-            |  Thông tin cá nhân
-        li
-          a(href="#" class="inner-logout")
-            i.fa-solid.fa-power-off
-            |  Đăng xuất
-    // End Sider
+block title
+  title Tổng quan
 
-    // Main
-    main.main Main
-    // ENdMain
+block main
+  h1 Tổng quan
+

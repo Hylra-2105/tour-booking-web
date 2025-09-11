@@ -412,3 +412,50 @@ button {
   padding: 30px;
 }
 /* End Main */
+
+/* Box-title */
+.box-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--primary-text);
+}
+/* End Box-title */
+
+/* Section 1 */
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.section-1 .inner-item {
+  background-color: white;
+  border-radius: 14px;
+  padding: 28px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-1 .inner-item img {
+  height: 60px;
+}
+
+.section-1 .inner-item .inner-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-text);
+  margin-bottom: 4px;
+}
+
+.section-1 .inner-item .inner-number {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--primary-text);
+}
+/* End Section 1 */

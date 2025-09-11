@@ -390,6 +390,15 @@ button {
 .sider .inner-menu a.inner-logout {
   color: #f93c65;
 }
+
+.sider .inner-menu a.inner-logout:hover {
+  background-color: #f93c65;
+  color: white;
+}
+
+.sider .inner-menu a.inner-logout:hover::before {
+  background-color: #f93c65;
+}
 /* End Sider */
 
 /* Main */

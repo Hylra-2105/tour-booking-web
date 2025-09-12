@@ -323,6 +323,33 @@ button {
   font-size: 12px;
   color: #565656;
 }
+
+.inner-button-menu {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .header .inner-logo {
+    width: auto;
+    padding-left: 30px;
+  }
+  .inner-button-menu {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header .inner-logo {
+    padding-left: 15px;
+  }
+
+  .inner-wrap {
+    margin-right: 15px;
+    gap: 20px;
+  }
+}
 /* ENd Header */
 
 /* Sider */
@@ -399,6 +426,12 @@ button {
 .sider .inner-menu a.inner-logout:hover::before {
   background-color: #f93c65;
 }
+
+@media (max-width: 991.98px) {
+  .sider {
+    display: none;
+  }
+}
 /* End Sider */
 
 /* Main */
@@ -410,6 +443,19 @@ button {
   width: calc(100% - 240px);
   min-height: calc(100vh - 70px);
   padding: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .main {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main {
+    padding: 30px 15px;
+  }
 }
 /* End Main */
 
@@ -494,3 +540,132 @@ button {
   height: 273px;
 }
 /* End Section 2 */
+
+/* Section 3 */
+.section-3 {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.section-3 .inner-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-text);
+}
+/* End Section 3 */
+
+/* Text Align */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+/* End Text Align */
+
+/* Text Color */
+.text-primary {
+  color: var(--primary-color);
+}
+/* End Text Color */
+
+/* Table 1 */
+.table-1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-1 thead th {
+  background-color: #f1f4f9;
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.table-1 thead th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.table-1 thead th:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.table-1 tbody td {
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-text);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+}
+/* End Table 1 */
+
+/* Tour List */
+.tour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tour-list .tour-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour-list .inner-image {
+  width: 76px;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.tour-list .inner-content {
+  flex: 1;
+}
+
+.tour-list .inner-content .inner-name {
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.tour-list .inner-content .inner-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--primary-text);
+}
+/* End Tour List */
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4.5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.badge-organe {
+  background-color: rgba(255, 166, 0, 0.2);
+  color: #ffa756;
+}
+
+.badge-green {
+  background-color: rgba(0, 182, 155, 0.2);
+  color: #00b69b;
+}
+.badge-red {
+  background-color: rgba(239, 55, 38, 0.2);
+  color: #ef3826;
+}
+/* End Badge */

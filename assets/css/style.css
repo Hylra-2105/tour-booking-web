@@ -252,7 +252,7 @@ button {
   color: var(--primary-text);
 }
 
-.inner-wrap {
+.header .inner-wrap {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -504,6 +504,18 @@ button {
   font-size: 28px;
   color: var(--primary-text);
 }
+
+@media (max-width: 1365.98px) {
+  .section-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* End Section 1 */
 
 /* Section 2 */
@@ -518,6 +530,8 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .section-2 .inner-head .inner-title {
@@ -539,6 +553,12 @@ button {
 .section-2 .inner-chart {
   height: 273px;
 }
+
+@media (max-width: 575.98px) {
+  .section-2 {
+    padding: 25px 15px;
+  }
+}
 /* End Section 2 */
 
 /* Section 3 */
@@ -555,6 +575,12 @@ button {
   font-weight: 700;
   font-size: 24px;
   color: var(--primary-text);
+}
+
+@media (max-width: 575.98px) {
+  .section-3 {
+    padding: 25px 15px;
+  }
 }
 /* End Section 3 */
 
@@ -575,9 +601,14 @@ button {
 /* End Text Color */
 
 /* Table 1 */
+.table-1 {
+  overflow-x: auto;
+}
+
 .table-1 table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 1076px;
 }
 
 .table-1 thead th {
@@ -669,3 +700,53 @@ button {
   color: #ef3826;
 }
 /* End Badge */
+
+/* Section 4 */
+.section-4 {
+  margin-bottom: 15px;
+}
+
+.section-4 .inner-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid #d5d5d5;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+
+.section-4 .inner-item {
+  padding: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid #d5d5d5;
+  color: var(--primary-text);
+}
+
+.section-4 .inner-item:last-child {
+  border-right: 0;
+}
+
+.section-4 .inner-label i {
+  font-size: 20px;
+}
+
+.section-4 .inner-item select,
+.section-4 .inner-item input {
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-4 .inner-item input[type="date"] {
+  width: 110px;
+}
+
+.section-4 .inner-reset {
+  color: #ea0234;
+  cursor: pointer;
+}
+/* End Section 4 */

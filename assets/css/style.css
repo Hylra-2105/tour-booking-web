@@ -589,6 +589,10 @@ button {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
@@ -716,6 +720,7 @@ button {
 
 .section-4 .inner-item {
   padding: 24px;
+  height: 42px;
   font-weight: 700;
   font-size: 14px;
   display: inline-flex;
@@ -749,4 +754,237 @@ button {
   color: #ea0234;
   cursor: pointer;
 }
+
+.section-4 .inner-reset i {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 991.98px) {
+  .section-4 .inner-item {
+    padding: 15px;
+  }
+}
 /* End Section 4 */
+
+/* Section 5 */
+.section-5 {
+  margin-bottom: 30px;
+}
+
+.section-5 .inner-wrap {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-5 .inner-change-status {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 70px;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 14px;
+}
+
+.section-5 .inner-change-status .inner-item {
+  padding: 0 24px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid #d5d5d5;
+  color: var(--primary-text);
+}
+
+.section-5 .inner-change-status .inner-item:last-child {
+  border-right: 0;
+}
+
+.section-5 .inner-change-status .inner-item select {
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-5 .inner-change-status .inner-item button {
+  border: 0;
+  background-color: white;
+  color: #ea0234;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.section-5 .inner-search {
+  background-color: white;
+  height: 70px;
+  width: 366px;
+  border-radius: 14px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 15px;
+}
+
+.section-5 .inner-search i {
+  font-size: 20px;
+  color: rgba(166, 166, 166, 0.5);
+}
+
+.section-5 .inner-search input {
+  border: 0;
+  flex: 1;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-5 .inner-search input::placeholder {
+  color: #979797;
+}
+
+.section-5 .inner-button-create {
+  display: inline-flex;
+  padding: 0 45px;
+  height: 70px;
+  align-items: center;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .section-5 .inner-change-status {
+    height: 42px;
+    padding: 0;
+  }
+
+  .section-5 .inner-search {
+    height: 42px;
+    padding: 0 15px;
+  }
+
+  .section-5 .inner-button-create {
+    height: 42px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-5 .inner-search {
+    width: 100%;
+  }
+}
+/* End Section 5 */
+
+/* Section 6 */
+.section-6 {
+  margin-bottom: 15px;
+}
+/* End Section 6 */
+
+/* Table 2 */
+.table-2 {
+  overflow-x: auto;
+}
+
+.table-2 table {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 1141px;
+}
+
+.table-2 thead th {
+  padding: 14px;
+  background-color: #fcfdfd;
+  border-bottom: 1px solid #d5d5d5;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.table-2 tbody td {
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-text);
+  border-bottom: 1px solid rgba(213, 213, 213, 0.6);
+}
+
+.table-2 tbody tr:last-child td {
+  border: 0;
+}
+
+.table-2 .inner-avatar {
+  height: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.table-2 .inner-small {
+  font-size: 12px;
+}
+/* End Table 2 */
+
+/* Box Actions */
+.box-actions {
+  background-color: #fafbfd;
+  border-radius: 8px;
+  border: 1px solid #d5d5d5;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box-actions a {
+  display: inline-flex;
+  padding: 8.5px 16.5px;
+  border-right: 1px solid #d5d5d5;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.box-actions .inner-remove {
+  color: #ef3826;
+}
+
+.box-actions a:last-child {
+  border-right: 0;
+}
+/* End Box Actions */
+
+/* Section 7 */
+.section-7 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-7 .inner-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(32, 34, 36, 0.6);
+}
+
+.section-7 .inner-pagination {
+  border: 1px solid #d5d5d5;
+  background-color: #fafbfd;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(32, 34, 36, 0.6);
+  padding: 6px 6px 6px 14px;
+}
+/* End Section 7 */

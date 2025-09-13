@@ -1,4 +1,5 @@
 extends ../layouts/default.pug
+include ../mixins/checkbox.pug
 
 block title
   title Quản lý danh mục
@@ -27,5 +28,92 @@ block main
         input(type="date")
       .inner-item.inner-reset 
         <i class="fa-solid fa-rotate-right"></i> Xóa bộ lọc
-
   // End Section 4
+
+  // Section 5
+  .section-5 
+    .inner-wrap 
+      .inner-change-status
+        .inner-item 
+          select
+            option(value="") --- Hành động ---
+            option(value="") Hoạt động
+            option(value="") Dừng hoạt động
+            option(value="") Xóa
+        .inner-item
+          button Áp dụng
+      .inner-search
+        <i class="fa-solid fa-magnifying-glass"></i>
+        input(type="text" placeholder="Tìm kiếm")
+      a.inner-button-create(href="#")  + Tạo mới
+  // End Section 5
+
+  // Section 6
+  .section-6
+    .table-2 
+      table 
+        thead
+          tr
+            th.text-left
+              +checkbox-30("","")
+            th.text-left Tên danh mục
+            th.text-center Ảnh đại diện
+            th.text-center Vị trí
+            th.text-center Trạng thái
+            th.text-left Tạo bởi
+            th.text-left Cập nhật bởi
+            th.text-left Hành động
+        tbody
+          tr
+            td.text-left
+              +checkbox-30("","")
+            td.text-left Danh mục 1
+            td.text-center 
+              img(src="assets/images/section-3-i-1.png" class="inner-avatar")
+            td.text-center 1
+            td.text-center 
+              .badge.badge-green Hoạt động
+            td.text-left
+              div Lê Văn A
+              div.inner-small 16:30 - 01/01/2024
+            td.text-left 
+              div Lê Văn A
+              div.inner-small 16:30 - 01/01/2024
+            td.text-left 
+              .box-actions
+                a(href="#" class="inner-edit") 
+                  <i class="fa-regular fa-pen-to-square"></i>
+                a(href="#" class="inner-remove") 
+                  <i class="fa-regular fa-trash-can"></i>
+        tbody
+          tr
+            td.text-left
+              +checkbox-30("","")
+            td.text-left Danh mục 1
+            td.text-center 
+              img(src="assets/images/section-3-i-1.png" class="inner-avatar")
+            td.text-center 1
+            td.text-center 
+              .badge.badge-red Tạm dừng
+            td.text-left
+              div Lê Văn A
+              div.inner-small 16:30 - 01/01/2024
+            td.text-left 
+              div Lê Văn A
+              div.inner-small 16:30 - 01/01/2024
+            td.text-left 
+              .box-actions
+                a(href="#" class="inner-edit") 
+                  <i class="fa-regular fa-pen-to-square"></i>
+                a(href="#" class="inner-remove") 
+                  <i class="fa-regular fa-trash-can"></i>
+  // End Section 6
+
+  // Section 7
+  .section-7
+    span(class="inner-label") Hiển thị 1 - 10 của 57 
+    select(class="inner-pagination")
+      option trang 1
+      option trang 2
+      option trang 3
+  // End Section 7

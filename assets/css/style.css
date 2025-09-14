@@ -988,3 +988,101 @@ button {
   padding: 6px 6px 6px 14px;
 }
 /* End Section 7 */
+
+/* Section 8 */
+.section-8 {
+  background-color: white;
+  border-radius: 14px;
+  border: 1px solid #b9b9b9;
+  padding: 50px;
+}
+
+.section-8 form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.section-8 .inner-group .inner-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.section-8 .inner-group > input,
+.section-8 .inner-group > select,
+.section-8 .inner-group > textarea {
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 0 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text);
+  width: 100%;
+}
+
+.section-8 .inner-group > input,
+.section-8 .inner-group > select {
+  height: 52px;
+}
+
+.section-8 .inner-group > textarea {
+  height: 160px;
+  padding-top: 18px;
+}
+
+.section-8 .inner-two-col {
+  grid-column: span 2;
+}
+
+.section-8 .inner-button {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-8 .inner-button button {
+  width: 274px;
+  height: 56px;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  color: white;
+  border-radius: 14px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section-8 .inner-button button:hover {
+  opacity: 1;
+}
+
+.section-8 .inner-back {
+  text-align: center;
+}
+
+.section-8 .inner-back a {
+  text-decoration: underline;
+  color: #5a8cff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (max-width: 767.98px) {
+  .section-8 {
+    padding: 20px 15px;
+  }
+
+  .section-8 form {
+    grid-template-columns: 1fr;
+  }
+
+  .section-8 .inner-two-col {
+    grid-column: span 1;
+  }
+}
+
+/* End Section 8 */

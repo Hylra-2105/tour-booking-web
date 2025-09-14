@@ -1090,6 +1090,150 @@ button {
   font-size: 18px;
 }
 
+.section-8 .inner-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 9px;
+}
+
+.section-8 .inner-input-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-8 .inner-input-item label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  width: 80px;
+}
+
+.section-8 .inner-input-item input {
+  flex: 1;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 0 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text);
+  height: 52px;
+  width: 100%;
+}
+
+.section-8 .inner-checkbox-list {
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  padding: 14px 23px;
+  border-radius: 4px;
+  height: 166px;
+  overflow-y: auto;
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-8 .inner-checkbox-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.section-8 .inner-checkbox-item label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-8 .inner-schedule {
+  margin-top: 11px;
+}
+
+.section-8 .inner-schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.section-8 .inner-schedule-item {
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  background-color: white;
+  padding: 20px;
+}
+
+.section-8 .inner-schedule-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-8 .inner-schedule-head input {
+  flex: 1;
+  height: 52px;
+  border: 1px solid #d5d5d5;
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  padding: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-8 .inner-schedule-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #d5d5d5;
+  background-color: #f5f6fa;
+  width: 52px;
+  height: 52px;
+  font-size: 18px;
+  color: #a6a6a6;
+}
+
+.section-8 .inner-schedule-button.inner-remove {
+  color: #ef3826;
+}
+
+.section-8 .inner-schedule-body {
+  margin-top: 15px;
+}
+
+.section-8 .inner-schedule-body textarea {
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #d5d5d5;
+  background-color: #f5f6fa;
+  padding: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+.section-8 .inner-schedule-create {
+  border-radius: 4px;
+  background-color: #d5d5d5;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.9;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+
+.section-8 .inner-schedule-create:hover {
+  opacity: 1;
+}
+
 @media (max-width: 767.98px) {
   .section-8 {
     padding: 20px 15px;
@@ -1101,6 +1245,20 @@ button {
 
   .section-8 .inner-two-col {
     grid-column: span 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-8 .inner-schedule-item {
+    padding: 20px 10px;
+  }
+
+  .section-8 .inner-schedule-head {
+    flex-wrap: wrap;
+  }
+
+  .section-8 .inner-schedule-head input {
+    order: 1;
   }
 }
 /* End Section 8 */

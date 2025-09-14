@@ -861,6 +861,20 @@ button {
   cursor: pointer;
 }
 
+.section-5 .inner-button-trash {
+  display: inline-flex;
+  padding: 0 45px;
+  height: 70px;
+  align-items: center;
+  background-color: #ef382633;
+  opacity: 0.9;
+  border-radius: 14px;
+  color: #ef3826;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 @media (max-width: 991.98px) {
   .section-5 .inner-change-status {
     height: 42px;
@@ -873,6 +887,11 @@ button {
   }
 
   .section-5 .inner-button-create {
+    height: 42px;
+    padding: 0 25px;
+  }
+
+  .section-5 .inner-button-trash {
     height: 42px;
     padding: 0 25px;
   }
@@ -985,7 +1004,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: rgba(32, 34, 36, 0.6);
-  padding: 6px 6px 6px 14px;
+  padding: 3px 3px 3px 10px;
 }
 /* End Section 7 */
 
@@ -1084,5 +1103,4 @@ button {
     grid-column: span 1;
   }
 }
-
 /* End Section 8 */

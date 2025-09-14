@@ -5,43 +5,10 @@ include ../mixins/action.pug
 include ../mixins/search.pug
 
 block title
-  title Quản lý tour
+  title Thùng rác tour
 
 block main
-  h1.box-title Quản lý tour
-  
-  //Section 4
-  .section-4
-    .inner-wrap 
-      .inner-item.inner-label
-        <i class="fa-solid fa-filter"></i> Bộ lọc
-      .inner-item
-        select
-          option(value="") Trạng thái
-          option(value="") Hoạt động
-          option(value="") Tạm dừng
-      .inner-item
-        select
-          option(value="") Người tạo
-          option(value="") Lê Văn A
-          option(value="") Lê Văn B
-      .inner-item
-        input(type="date")
-        span -
-        input(type="date")
-      .inner-item
-        select
-          option(value="") Danh mục
-          option(value="") Danh mục 1
-          option(value="") Danh mục 2
-      .inner-item
-        select
-          option(value="") Mức giá
-          option(value="") Dưới 2tr
-          option(value="") Trên 2tr
-      .inner-item.inner-reset 
-        <i class="fa-solid fa-rotate-right"></i> Xóa bộ lọc
-  //End Section 4
+  h1.box-title Thùng rác tour
 
   //Section 5
   .section-5 
@@ -51,8 +18,6 @@ block main
         .inner-item
           button Áp dụng
       +search-input('Tìm kiếm')
-      a.inner-button-create(href="#")  + Tạo mới
-      a.inner-button-trash(href="#") Thùng rác
   //End Section 5
 
   //Section 6
@@ -70,7 +35,7 @@ block main
             th.text-center Vị trí
             th.text-center Trạng thái
             th.text-left Tạo bởi
-            th.text-left Cập nhật bởi
+            th.text-left Xóa bởi
             th.text-left Hành động
         tbody
           tr
@@ -99,7 +64,7 @@ block main
             td.text-left 
               .box-actions
                 a(href="#" class="inner-edit") 
-                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-solid fa-arrow-rotate-left"></i>
                 a(href="#" class="inner-remove") 
                   <i class="fa-regular fa-trash-can"></i>
         tbody
@@ -129,7 +94,7 @@ block main
             td.text-left 
               .box-actions
                 a(href="#" class="inner-edit") 
-                  <i class="fa-regular fa-pen-to-square"></i>
+                 <i class="fa-solid fa-arrow-rotate-left"></i>
                 a(href="#" class="inner-remove") 
                   <i class="fa-regular fa-trash-can"></i>
   //End Section 6

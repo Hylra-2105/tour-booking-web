@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/lib.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header class="header"> 
+      <div class="inner-logo"> <a href="#"> <span>28</span><span>Admin</span></a></div>
+      <div class="inner-wrap">
+        <div class="inner-notify"><img src="assets/images/icon-bell.svg" alt=""><span>6</span></div>
+        <div class="inner-account">
+          <div class="inner-avatar"><img src="assets/images/avatar.png" alt=""></div>
+          <div class="inner-text">
+            <div class="inner-name">Le Van A</div>
+            <div class="inner-role">Admin</div>
+          </div>
+        </div>
+        <div class="inner-button-menu">
+           <i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <!-- End Header-->
+    <!-- Sider-->
+    <nav class="sider"> 
+      <ul class="inner-menu">
+        <li><a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục</a></li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour</a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng</a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i> Quản lý người dùng</a></li>
+        <li><a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ</a></li>
+      </ul>
+      <hr>
+      <ul class="inner-menu">
+        <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung</a></li>
+        <li><a href="#"><i class="fa-solid fa-user-gear"></i> Thông tin cá nhân</a></li>
+        <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+      </ul>
+    </nav>
+    <!-- End Sider-->
+    <!-- Main-->
+    <main class="main"> 
+      <h1 class="box-title">Quản lý đơn hàng</h1>
+      <!--Section 4-->
+      <div class="section-4">
+        <div class="inner-wrap"> 
+          <div class="inner-item inner-label"><i class="fa-solid fa-filter"></i> Bộ lọc</div>
+          <div class="inner-item">
+            <select>
+              <option value="">Trạng thái</option>
+              <option value="">Hoạt động</option>
+              <option value="">Tạm dừng</option>
+            </select>
+          </div>
+          <div class="inner-item">
+            <input type="date"><span>-</span>
+            <input type="date">
+          </div>
+          <div class="inner-item">
+            <select>
+              <option value="">Phương thức thanh toán</option>
+              <option value="">Bank</option>
+              <option value="">Momo</option>
+            </select>
+          </div>
+          <div class="inner-item">
+            <select>
+              <option value="">Trạng thái thanh toán</option>
+              <option value="">Đã thanh toán</option>
+              <option value="">Chưa thanh toán</option>
+            </select>
+          </div>
+          <div class="inner-item inner-reset">
+             <i class="fa-solid fa-rotate-right"></i> Xóa bộ lọc</div>
+        </div>
+      </div>
+      <!--End Section 4-->
+      <!--Section 5-->
+      <div class="section-5"> 
+        <div class="inner-wrap"> 
+          <div class="inner-search"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm"/>
+          </div>
+        </div>
+      </div>
+      <!--End Section 5-->
+      <!--Section 6-->
+      <div class="section-6">
+        <div class="table-2"> 
+          <table> 
+            <thead>
+              <tr> 
+                <th class="text-left">Mã </th>
+                <th class="text-left">Thông tin khách </th>
+                <th class="text-left">Danh sách tour </th>
+                <th class="text-left">Thanh toán</th>
+                <th class="text-left">Trạng thái</th>
+                <th class="text-right">Ngày đặt</th>
+                <th class="text-left">Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left">
+                  <div class="text-primary">OD000001</div>
+                </td>
+                <td class="text-left">
+                  <div>Họ tên: Lê Văn A</div>
+                  <div>SĐT: 0123456789</div>
+                  <div>Ghi chú: Test...</div>
+                </td>
+                <td class="text-left">
+                  <div class="tour-list"> 
+                    <div class="tour-item"><img class="inner-image" src="assets/images/section-3-i-1.png">
+                      <div class="inner-content">
+                        <div class="inner-name">Tour Hạ Long </div>
+                        <div class="inner-desc">
+                          <div>Người lớn: 3 x 1.500.000đ</div>
+                          <div>Trẻ em: 2 x 1.300.000đ</div>
+                          <div>Em bé: 2 x 1.000.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tour-item"><img class="inner-image" src="assets/images/section-3-i-1.png">
+                      <div class="inner-content">
+                        <div class="inner-name">Tour Hạ Long </div>
+                        <div class="inner-desc">
+                          <div>Người lớn: 3 x 1.500.000đ</div>
+                          <div>Trẻ em: 2 x 1.300.000đ</div>
+                          <div>Em bé: 2 x 1.000.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-left">
+                  <div>Tổng tiền: 10.000.000đ</div>
+                  <div>Giảm: 400.000đ</div>
+                  <div>Mã giảm: TOURMUAHE2024</div>
+                  <div>Thanh toán: 9.600.000đ</div>
+                  <div>PTTT: Ví Momo</div>
+                  <div>TTTT: Đã thanh toán</div>
+                </td>
+                <td class="text-left">
+                  <div class="badge badge-organe">Khởi tạo</div>
+                </td>
+                <td class="text-right"> 
+                  <div>16:20</div>
+                  <div>01/01/2024</div>
+                </td>
+                <td class="text-left"> 
+                  <div class="box-actions"><a class="inner-edit" href="#">
+                       <i class="fa-regular fa-pen-to-square"></i></a><a class="inner-remove" href="#">
+                       <i class="fa-regular fa-trash-can"></i></a></div>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="text-left">
+                  <div class="text-primary">OD000001</div>
+                </td>
+                <td class="text-left">
+                  <div>Họ tên: Lê Văn A</div>
+                  <div>SĐT: 0123456789</div>
+                  <div>Ghi chú: Test...</div>
+                </td>
+                <td class="text-left">
+                  <div class="tour-list"> 
+                    <div class="tour-item"><img class="inner-image" src="assets/images/section-3-i-1.png">
+                      <div class="inner-content">
+                        <div class="inner-name">Tour Hạ Long </div>
+                        <div class="inner-desc">
+                          <div>Người lớn: 3 x 1.500.000đ</div>
+                          <div>Trẻ em: 2 x 1.300.000đ</div>
+                          <div>Em bé: 2 x 1.000.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tour-item"><img class="inner-image" src="assets/images/section-3-i-1.png">
+                      <div class="inner-content">
+                        <div class="inner-name">Tour Hạ Long </div>
+                        <div class="inner-desc">
+                          <div>Người lớn: 3 x 1.500.000đ</div>
+                          <div>Trẻ em: 2 x 1.300.000đ</div>
+                          <div>Em bé: 2 x 1.000.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-left">
+                  <div>Tổng tiền: 10.000.000đ</div>
+                  <div>Giảm: 400.000đ</div>
+                  <div>Mã giảm: TOURMUAHE2024</div>
+                  <div>Thanh toán: 9.600.000đ</div>
+                  <div>PTTT: Ví Momo</div>
+                  <div>TTTT: Đã thanh toán</div>
+                </td>
+                <td class="text-left">
+                  <div class="badge badge-red">Đã hủy</div>
+                </td>
+                <td class="text-right"> 
+                  <div>16:20</div>
+                  <div>01/01/2024</div>
+                </td>
+                <td class="text-left"> 
+                  <div class="box-actions"><a class="inner-edit" href="#">
+                       <i class="fa-regular fa-pen-to-square"></i></a><a class="inner-remove" href="#">
+                       <i class="fa-regular fa-trash-can"></i></a></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--End Section 6-->
+      <!--Section 7-->
+      <div class="section-7"><span class="inner-label">Hiển thị 1 - 10 của 57</span>
+        <select class="inner-pagination">
+          <option value="1">trang 1</option>
+          <option value="2">trang 2</option>
+          <option value="3">trang 3</option>
+        </select>
+      </div>
+      <!--End Section 7-->
+    </main>
+    <!-- ENdMain-->
+  </body>
+</html>

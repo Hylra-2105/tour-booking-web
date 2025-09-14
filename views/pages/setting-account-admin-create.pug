@@ -1,0 +1,45 @@
+extends ../layouts/default.pug
+
+block title
+  title Tạo tài khoản quản trị
+
+block main
+  h1.box-title Tạo tài khoản quản trị
+
+  // Section 8
+  .section-8
+    form(action="")
+      .inner-group 
+        label.inner-label(for="fullName") Họ tên
+        input(type="text" id="fullName" name="fullName" value="Lê Văn A")
+      .inner-group 
+        label.inner-label(for="email") Email
+        input(type="email" id="email" name="email" value="levana@gmail.com")
+      .inner-group 
+        label.inner-label(for="phone") Số điện thoại
+        input(type="text" id="phone" name="phone" value="0123456789")
+      .inner-group 
+        label.inner-label(for="parent") Nhóm quyền
+        select(id="parent" name="parent")
+          option(value="") Quản trị viên
+          option(value="") Danh mục 1
+          option(value="") Danh mục 2
+      .inner-group 
+        label.inner-label(for="jobTitle") Chức vụ
+        input(type="text" id="jobTitle" name="jobTitle" value="Giám đốc") 
+      .inner-group 
+        label.inner-label(for="status") Trạng thái
+        select(id="status" name="status")
+          option(value="") Hoạt động
+          option(value="") Tạm dừng
+      .inner-group 
+        label.inner-label(for="password") Mật khẩu
+        input(type="text" id="password" name="password") 
+      .inner-group.inner-two-col
+        label.inner-label(for="avatar") Ảnh đại diện
+        input(type="file" id="avatar" name="avatar")
+      .inner-button.inner-two-col
+        button Tạo mới
+    .inner-back 
+      a(href="#") Quay lại danh sách
+  // End Section 8

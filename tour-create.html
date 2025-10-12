@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/lib.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tiny.cloud/1/5hnwz6gt0cxobzlbho18qblndw9s509phke1fs4asrc6fxyl/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+    <script src="assets/js/tinymce-config.js"></script>
   </head>
   <body>
     <!-- Header-->
@@ -43,6 +45,7 @@
         <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
       </ul>
     </nav>
+    <div class="sider-overlay"></div>
     <!-- End Sider-->
     <!-- Main-->
     <main class="main"> 
@@ -206,13 +209,13 @@
           </div>
           <div class="inner-group inner-two-col">
             <label class="inner-label" for="information">Thông tin tour</label>
-            <textarea id="information" name="information"></textarea>
+            <textarea id="information" name="information" textarea-mce></textarea>
           </div>
           <div class="inner-group inner-two-col">
             <label class="inner-label">Lịch trình tour</label>
             <div class="inner-schedule">
               <div class="inner-schedule-list"> 
-                <div class="inner-schedule-item"> 
+                <div class="inner-schedule-item">
                   <div class="inner-schedule-head">
                     <div class="inner-schedule-button inner-move"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
                     <input type="text">
@@ -220,18 +223,7 @@
                     <div class="inner-schedule-button inner-more"><i class="fa-solid fa-chevron-down"></i></div>
                   </div>
                   <div class="inner-schedule-body"> 
-                    <textarea> </textarea>
-                  </div>
-                </div>
-                <div class="inner-schedule-item"> 
-                  <div class="inner-schedule-head">
-                    <div class="inner-schedule-button inner-move"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <input type="text">
-                    <div class="inner-schedule-button inner-remove"><i class="fa-regular fa-trash-can"></i></div>
-                    <div class="inner-schedule-button inner-more"><i class="fa-solid fa-chevron-down"></i></div>
-                  </div>
-                  <div class="inner-schedule-body"> 
-                    <textarea> </textarea>
+                    <textarea textarea-mce></textarea>
                   </div>
                 </div>
               </div>
@@ -247,5 +239,6 @@
       <!-- End Section 8-->
     </main>
     <!-- ENdMain-->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

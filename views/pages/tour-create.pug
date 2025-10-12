@@ -92,12 +92,12 @@ block main
         input(type="date" id="departureDate" name="departureDate" )
       .inner-group.inner-two-col
         label.inner-label(for="information") Thông tin tour
-        textarea(id="information" name="information")
+        textarea(id="information" name="information" textarea-mce)
       .inner-group.inner-two-col
         label.inner-label Lịch trình tour
         .inner-schedule
           .inner-schedule-list 
-            .inner-schedule-item 
+            .inner-schedule-item
               .inner-schedule-head
                 .inner-schedule-button.inner-move
                   <i class="fa-solid fa-arrows-up-down-left-right"></i>
@@ -107,18 +107,7 @@ block main
                 .inner-schedule-button.inner-more
                   <i class="fa-solid fa-chevron-down"></i>
               .inner-schedule-body 
-                textarea 
-            .inner-schedule-item 
-              .inner-schedule-head
-                .inner-schedule-button.inner-move
-                  <i class="fa-solid fa-arrows-up-down-left-right"></i>
-                input(type="text") 
-                .inner-schedule-button.inner-remove
-                  <i class="fa-regular fa-trash-can"></i>
-                .inner-schedule-button.inner-more
-                  <i class="fa-solid fa-chevron-down"></i>
-              .inner-schedule-body 
-                textarea 
+                textarea(textarea-mce)
           .inner-schedule-create + Thêm lich trình
       .inner-button.inner-two-col
         button Tạo mới

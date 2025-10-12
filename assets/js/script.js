@@ -1,0 +1,57 @@
+// Menu Mobile
+const buttonMenuMobile = document.querySelector(".header .inner-button-menu");
+if (buttonMenuMobile) {
+  const sider = document.querySelector(".sider");
+  const siderOverlay = document.querySelector(".sider-overlay");
+
+  buttonMenuMobile.addEventListener("click", () => {
+    sider.classList.add("active");
+    siderOverlay.classList.add("active");
+  });
+
+  siderOverlay.addEventListener("click", () => {
+    sider.classList.remove("active");
+    siderOverlay.classList.remove("active");
+  });
+}
+// ENd Menu Mobile
+
+// Schedule Section 8
+const scheduleSection8 = document.querySelector(".section-8 .inner-schedule");
+if (scheduleSection8) {
+  const buttonCreate = scheduleSection8.querySelector(".inner-schedule-create");
+  const scheduleList = scheduleSection8.querySelector(".inner-schedule-list");
+
+  //Tạo mới
+  buttonCreate.addEventListener("click", () => {
+    const firstItem = scheduleList.querySelector(".inner-schedule-item");
+    const cloneItem = firstItem.cloneNode(true);
+    cloneItem.querySelector("input").value = "";
+    const body = cloneItem.querySelector(".inner-schedule-body");
+    const id = `mce_${Date.now()}`;
+    body.innerHTML = `<textarea id="${id}"></textarea>`;
+    scheduleList.appendChild(cloneItem);
+    initTinyMCE(`#${id}`);
+  });
+
+  scheduleList.addEventListener("click", (event) => {
+    //Đóng/Mở
+    if (event.target.closest(".inner-more")) {
+      const parentItem = event.target.closest(".inner-schedule-item");
+      parentItem.classList.toggle("hidden");
+    }
+
+    //Xóa item
+    if (event.target.closest(".inner-remove")) {
+      const parentItem = event.target.closest(".inner-schedule-item");
+      const totalItem = scheduleList.querySelectorAll(
+        ".inner-schedule-item"
+      ).length;
+      if (parentItem && totalItem > 1) {
+        parentItem.remove();
+      }
+    }
+  });
+}
+
+// End Schedule Section 8

@@ -1463,3 +1463,28 @@ button {
   }
 }
 /* End Section 10 */
+
+/* Filepond */
+.filepond-image {
+  width: 150px;
+  height: 150px;
+}
+
+.filepond--root {
+  margin-bottom: 0;
+  height: 100% !important;
+}
+
+.filepond--root .filepond--credits {
+  display: none;
+}
+
+.filepond--root .filepond--drop-label {
+  min-height: 100%;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+  font-size: 50px;
+  cursor: pointer;
+}
+/* End Filepond */

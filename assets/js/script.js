@@ -27,9 +27,11 @@ if (scheduleSection8) {
     const firstItem = scheduleList.querySelector(".inner-schedule-item");
     const cloneItem = firstItem.cloneNode(true);
     cloneItem.querySelector("input").value = "";
+
     const body = cloneItem.querySelector(".inner-schedule-body");
     const id = `mce_${Date.now()}`;
     body.innerHTML = `<textarea id="${id}"></textarea>`;
+
     scheduleList.appendChild(cloneItem);
     initTinyMCE(`#${id}`);
   });
@@ -52,6 +54,29 @@ if (scheduleSection8) {
       }
     }
   });
-}
 
+  //Sắp xếp
+  new Sortable(scheduleList, {
+    handle: ".inner-move",
+    animation: 150,
+    onStart: (event) => {
+      const textarea = event.item.querySelector("textarea");
+      const id = textarea.id;
+      tinymce.get(id).remove();
+    },
+    onEnd: (event) => {
+      const textarea = event.item.querySelector("textarea");
+      const id = textarea.id;
+      initTinyMCE(`#${id}`);
+    },
+  });
+}
 // End Schedule Section 8
+
+//File Pond
+const filepondImage = document.querySelector("[filepond-image]");
+if (filepondImage) {
+  FilePond.registerPlugin(FilePondPluginImagePreview);
+  FilePond.create(filepondImage, { labelIdle: "+" });
+}
+//End File Pond

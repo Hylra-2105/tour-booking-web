@@ -28,7 +28,8 @@ block main
           option(value="") Tạm dừng
       .inner-group.inner-two-col
         label.inner-label(for="avatar") Ảnh đại diện
-        input(type="file" id="avatar" name="avatar")
+        .filepond-image
+          input(type="file" id="avatar" name="avatar" filepond-image)
       .inner-group.inner-two-col
         label.inner-label(for="description") Mô tả
         textarea(id="description" name="description" textarea-mce)

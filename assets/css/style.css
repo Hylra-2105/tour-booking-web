@@ -100,6 +100,8 @@ button {
   display: flex;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 12px;
   opacity: 0.6;
 }
 
@@ -576,7 +578,12 @@ button {
 }
 
 .section-2 .inner-chart {
-  height: 273px;
+  height: 400px;
+}
+
+.section-2 .inner-chart canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 @media (max-width: 575.98px) {
@@ -1488,3 +1495,8 @@ button {
   cursor: pointer;
 }
 /* End Filepond */
+
+.just-validate-error-label {
+  font-size: 12px;
+  margin-top: 5px;
+}

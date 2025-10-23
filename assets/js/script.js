@@ -80,3 +80,58 @@ if (filepondImage) {
   FilePond.create(filepondImage, { labelIdle: "+" });
 }
 //End File Pond
+
+// Revenue Chart
+const revenueChart = document.querySelector("#revenue-chart");
+if (revenueChart) {
+  new Chart(revenueChart, {
+    type: "line",
+    data: {
+      labels: ["01", "02", "03", "04", "05"],
+      datasets: [
+        {
+          label: "Tháng 09/2025",
+          data: [10000, 500, 3000, 200, 1500],
+          borderColor: "#F38FA4",
+        },
+        {
+          label: "Tháng 10/2025",
+          data: [15000, 5000, 300, 20000, 15000],
+          borderColor: "#26A2F5",
+        },
+      ],
+    },
+    options: {
+      maintainAspectRatio: false,
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "bottom",
+        },
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: "Ngày",
+            font: {
+              size: 16,
+            },
+            padding: { top: 10 },
+          },
+        },
+        y: {
+          title: {
+            display: true,
+            text: "Doanh thu (VNĐ)",
+            font: {
+              size: 16,
+            },
+            padding: { bottom: 10 },
+          },
+        },
+      },
+    },
+  });
+}
+// End Revenue Chart

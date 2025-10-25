@@ -8,12 +8,12 @@ block main
 
   // Section 8
   .section-8
-    form(action="")
+    form(action="" id="order-edit-form")
       .inner-group 
-        label.inner-label(for="fullName") Tên khách hàng  
+        label.inner-label(for="fullName") Tên khách hàng *
         input(type="text" id="fullName" name="fullName" value="Lê Văn A")
       .inner-group 
-        label.inner-label(for="phone") Số điện thoại 
+        label.inner-label(for="phone") Số điện thoại *
         input(type="text" id="phone" name="phone" value="0123456789")
       .inner-group.inner-two-col
         label.inner-label(for="note") Ghi chú

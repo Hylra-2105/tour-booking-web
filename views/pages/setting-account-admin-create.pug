@@ -8,15 +8,15 @@ block main
 
   // Section 8
   .section-8
-    form(action="")
+    form(action="" id="setting-account-admin-create-form")
       .inner-group 
-        label.inner-label(for="fullName") Họ tên
+        label.inner-label(for="fullName") Họ tên *
         input(type="text" id="fullName" name="fullName" value="Lê Văn A")
       .inner-group 
-        label.inner-label(for="email") Email
+        label.inner-label(for="email") Email *
         input(type="email" id="email" name="email" value="levana@gmail.com")
       .inner-group 
-        label.inner-label(for="phone") Số điện thoại
+        label.inner-label(for="phone") Số điện thoại *
         input(type="text" id="phone" name="phone" value="0123456789")
       .inner-group 
         label.inner-label(for="parent") Nhóm quyền
@@ -25,7 +25,7 @@ block main
           option(value="") Danh mục 1
           option(value="") Danh mục 2
       .inner-group 
-        label.inner-label(for="jobTitle") Chức vụ
+        label.inner-label(for="jobTitle") Chức vụ *
         input(type="text" id="jobTitle" name="jobTitle" value="Giám đốc") 
       .inner-group 
         label.inner-label(for="status") Trạng thái
@@ -33,7 +33,7 @@ block main
           option(value="") Hoạt động
           option(value="") Tạm dừng
       .inner-group 
-        label.inner-label(for="password") Mật khẩu
+        label.inner-label(for="password") Mật khẩu *
         input(type="text" id="password" name="password") 
       .inner-group.inner-two-col
         label.inner-label(for="avatar") Ảnh đại diện

@@ -54,17 +54,17 @@
       <h1 class="box-title">Tạo tài khoản quản trị</h1>
       <!-- Section 8-->
       <div class="section-8">
-        <form action="">
+        <form action="" id="setting-account-admin-create-form">
           <div class="inner-group"> 
-            <label class="inner-label" for="fullName">Họ tên</label>
+            <label class="inner-label" for="fullName">Họ tên *</label>
             <input type="text" id="fullName" name="fullName" value="Lê Văn A">
           </div>
           <div class="inner-group"> 
-            <label class="inner-label" for="email">Email</label>
+            <label class="inner-label" for="email">Email *</label>
             <input type="email" id="email" name="email" value="levana@gmail.com">
           </div>
           <div class="inner-group"> 
-            <label class="inner-label" for="phone">Số điện thoại</label>
+            <label class="inner-label" for="phone">Số điện thoại *</label>
             <input type="text" id="phone" name="phone" value="0123456789">
           </div>
           <div class="inner-group"> 
@@ -76,7 +76,7 @@
             </select>
           </div>
           <div class="inner-group"> 
-            <label class="inner-label" for="jobTitle">Chức vụ</label>
+            <label class="inner-label" for="jobTitle">Chức vụ *</label>
             <input type="text" id="jobTitle" name="jobTitle" value="Giám đốc">
           </div>
           <div class="inner-group"> 
@@ -87,7 +87,7 @@
             </select>
           </div>
           <div class="inner-group"> 
-            <label class="inner-label" for="password">Mật khẩu</label>
+            <label class="inner-label" for="password">Mật khẩu *</label>
             <input type="text" id="password" name="password">
           </div>
           <div class="inner-group inner-two-col">
@@ -107,6 +107,7 @@
     <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
     <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

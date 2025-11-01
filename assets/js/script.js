@@ -456,3 +456,20 @@ if (profileChangePasswordForm) {
     });
 }
 // End Profile Change Password Form
+
+// Active Menu Sidebar
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname.split("/").pop();
+  const menuLinks = document.querySelectorAll(".inner-menu a");
+
+  menuLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+// End Active Menu Sidebar

@@ -459,13 +459,16 @@ if (profileChangePasswordForm) {
 
 // Active Menu Sidebar
 document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname.split("/").pop();
+  let currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "" || currentPath === "/") {
+    currentPath = "index.html";
+  }
+
   const menuLinks = document.querySelectorAll(".inner-menu a");
 
   menuLinks.forEach((link) => {
     const linkPath = link.getAttribute("href");
 
-    // Nếu đang ở đúng trang hoặc là trang con của "Cài đặt"
     if (
       linkPath === currentPath ||
       (linkPath === "setting-list.html" &&

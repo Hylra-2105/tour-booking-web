@@ -46,10 +46,14 @@ if (loginForm) {
       // },
     ])
     .onSuccess((event) => {
-      const email = event.target.email.value;
-      console.log(email);
-      const password = event.target.password.value;
-      console.log(password);
+      const email = event.target.email.value.trim();
+      const password = event.target.password.value.trim();
+
+      if (email === "admin@gmail.com" && password === "Admin@123") {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Sai email hoặc mật khẩu!");
+      }
     });
 }
 // End Login Form
@@ -124,12 +128,13 @@ if (registerForm) {
       },
     ])
     .onSuccess((event) => {
-      const fullName = event.target.fullName.value;
-      console.log(fullName);
-      const email = event.target.email.value;
-      console.log(email);
-      const password = event.target.password.value;
-      console.log(password);
+      const fullName = event.target.fullName.value.trim();
+      const email = event.target.email.value.trim();
+      const password = event.target.password.value.trim();
+
+      console.log(fullName, email, password);
+
+      window.location.href = "login.html";
     });
 }
 // End Register Form

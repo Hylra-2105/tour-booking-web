@@ -50,7 +50,7 @@ if (loginForm) {
       const password = event.target.password.value.trim();
 
       if (email === "admin@gmail.com" && password === "Admin@123") {
-        window.location.href = "dashboard.html";
+        window.location.href = "index.html";
       } else {
         alert("Sai email hoặc mật khẩu!");
       }

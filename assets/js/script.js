@@ -465,7 +465,16 @@ document.addEventListener("DOMContentLoaded", () => {
   menuLinks.forEach((link) => {
     const linkPath = link.getAttribute("href");
 
-    if (linkPath === currentPath) {
+    // Nếu đang ở đúng trang hoặc là trang con của "Cài đặt"
+    if (
+      linkPath === currentPath ||
+      (linkPath === "setting-list.html" &&
+        [
+          "website-infor.html",
+          "setting-account.html",
+          "setting-role-list.html",
+        ].includes(currentPath))
+    ) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
